@@ -1,0 +1,20 @@
+# General Configuration
+Host *
+  AddressFamily inet
+  Compression yes
+  ForwardAgent no
+  ForwardX11 no
+
+# Github
+Host github-personal.com
+  Hostname github.com
+  IdentityFile /PATH/TO/PRIVATE_KEY
+
+# Personal Server
+Host example.com
+  Hostname 1.1.1.1
+  IdentityFile /PATH/TO/PRIVATE_KEY
+  Port 22
+  RemoteCommand tmux new-session -A -s 0
+  User root
+

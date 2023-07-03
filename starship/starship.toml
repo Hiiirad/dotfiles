@@ -1,0 +1,71 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+error_symbol = '[✗](bold red)'
+success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+
+[cmd_duration]
+format = '[time $duration](bold yellow)'
+min_time = 500
+
+[directory]
+disabled = false
+home_symbol = '~'
+read_only = ' 🔒'
+style = 'bold cyan'
+truncate_to_repo = true
+truncation_length = 5
+truncation_symbol = '…/'
+use_os_path_sep = true
+
+[hostname]
+disabled = false
+format = '[$ssh_symbol](bold blue) on [$hostname](bold red) '
+ssh_only = true
+ssh_symbol = '🌏 '
+
+[jobs]
+disabled = false
+number_threshold = 2
+symbol = '✦'
+symbol_threshold = 1
+
+[line_break]
+disabled = false
+
+[localip]
+disabled = false
+format = '[@$localipv4](bold red) '
+ssh_only = true
+
+[os]
+disabled = true
+format = "[($name )]($style)"
+style = "bold blue"
+
+[package]
+disabled = false
+
+[shlvl]
+disabled = false
+format = '[\[$shlvl levels down\] ](bold red)'
+threshold = 2
+ 
+[time]
+disabled = true
+format = '🕙[\[ $time \]]($style) '
+style = 'bold yellow'
+time_format = '%T'
+utc_time_offset = '+3.5'
+
+[username]
+disabled = false
+format = '[$user]($style) '
+show_always = false
+style_root = 'red bold'
+style_user = 'white bold'
