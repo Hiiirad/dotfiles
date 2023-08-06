@@ -14,7 +14,7 @@ set fileencoding=utf-8
 set hidden
 set history=1000
 set hlsearch
-set ignorecase
+set ignorecase smartcase
 set incsearch
 set laststatus=2
 set modeline
@@ -32,7 +32,6 @@ set shiftwidth=2
 set showcmd
 set showmatch
 set showmode
-set smartcase
 set softtabstop=0
 "set spell! spelllang=en_us
 "set spell
