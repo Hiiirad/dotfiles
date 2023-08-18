@@ -42,6 +42,7 @@ set termguicolors
 set title
 set undolevels=1000
 set wildmenu
+set wildmode=longest,list,full
 set wrap linebreak nolist
 syntax on
 
