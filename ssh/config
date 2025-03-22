@@ -4,6 +4,7 @@ Host *
   Compression yes
   ForwardAgent no
   ForwardX11 no
+  LogLevel ERROR
 
 # Github
 Host github-personal.com
@@ -15,6 +16,6 @@ Host example.com
   Hostname 1.1.1.1
   IdentityFile /PATH/TO/PRIVATE_KEY
   Port 22
-  RemoteCommand tmux new-session -A -s 0
+  RemoteCommand tmux attach -t main || tmux new -s main
+  RequestTTY yes
   User root
-
