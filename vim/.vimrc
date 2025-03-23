@@ -9,8 +9,8 @@ set clipboard=unnamedplus
 set confirm
 set encoding=utf-8
 set expandtab
-set ffs=unix,dos,mac
 set fileencoding=utf-8
+set fileformat=unix
 set grepprg=rg\ --vimgrep\ -uu\ --no-heading\ --smart-case
 set hidden
 set history=1000
