@@ -30,7 +30,7 @@ set path+=**
 set ruler
 set scrolloff=8
 set shiftround
-set shiftwidth=2
+set shiftwidth=4
 set showcmd
 set showmatch
 set showmode
@@ -39,7 +39,7 @@ set softtabstop=0
 "set spell! spelllang=en_us
 "set spell
 set spelllang=en_us
-set tabstop=2
+set tabstop=4
 set termbidi
 "set termguicolors
 set title
@@ -62,5 +62,5 @@ nnoremap <expr> k v:count == 0 ? 'gk' : 'k'
 nnoremap <expr> j v:count == 0 ? 'gj' : 'j'
 
 " Change Leader Key to Space
-let g:mapleader = ' '
-let maplocalleader = ' '
+let g:mapleader = " "
+let maplocalleader = " "
